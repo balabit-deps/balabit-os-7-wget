@@ -1,3 +1,17 @@
+wget (1.19.4-1ubuntu2.2) bionic-security; urgency=medium
+
+  * SECURITY UPDATE: Access to sensitive information
+    - debian/patches/CVE-2018-20483-*.patch: fix in
+      src/ftp.c, src/http.c, src/xattr.c, src/xattr.h,
+      src/init.c, src/main.c, doc/wget.texi.
+    - CVE-2018-20483
+  * SECURITY UPDATE: Buffer overflow
+    - debian/patches/CVE-2019-5953-*.patch: fix in
+      src/iri.c.
+    - CVE-2019-5953
+
+ -- Leonidas S. Barbosa <leo.barbosa@canonical.com>  Mon, 08 Apr 2019 15:51:50 -0300
+
 wget (1.19.4-1ubuntu2.1) bionic-security; urgency=medium
 
   * SECURITY UPDATE: Cookie injection vulnerability
